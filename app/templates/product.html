@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% block script %}
+<script type="text/Javascript">
+    $(document).ready(function () {
+        $('#example').DataTable();
+    });
+</script>
+{% endblock %}
+
+{% block content %}
+
+    <div class="container-md">
+
+        <table id="example" class="display" style="width:100%">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Author</th>
+                    <th>Recommendation</th>
+                    <th>Score</th>
+                    <th>Purchased</th>
+                    <th>Thumbs up</th>
+                    <th>Thumbs down</th>
+                    <th>Content</th>
+                    <th>Pros</th>
+                    <th>Cons</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </tbody>
+        </table>
+
+        <br>
+
+        
+        <a href="#" class="card-link">JSON</a>
+
+    </div>
+{% endblock %}
